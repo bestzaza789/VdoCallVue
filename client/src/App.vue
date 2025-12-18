@@ -117,8 +117,8 @@ function handleLeaveRoom() {
 onMounted(() => {
   const path = window.location.pathname
   const match = path.match(/^\/room\/(.+)$/)
-  if (match) {
-    const urlRoomId = match[1]
+  if (match && match[1]) {
+    const urlRoomId: string = match[1]
     roomInput.value = urlRoomId
     joinRoom(urlRoomId)
   }
