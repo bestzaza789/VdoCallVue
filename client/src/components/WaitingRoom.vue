@@ -63,7 +63,6 @@ defineEmits<{
 }>()
 
 const copied = ref(false)
-const linkInput = ref<HTMLInputElement | null>(null)
 const localVideo = ref<HTMLVideoElement | null>(null)
 
 const inQueue = computed(() => props.queuePosition > 0)
